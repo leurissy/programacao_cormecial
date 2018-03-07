@@ -1,0 +1,142 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>HueHue</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/funcoes.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">HueHue</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Página Um</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Ação</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Página Dois</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </nav>
+
+
+
+
+
+    <div class="jumbotron jumbotron-fluid" style="background-color:#c4eccd">
+        <div class="container">
+            <h1 class="display-4">Bem Vindo!</h1>
+            <p class="lead">No entanto, não podemos esquecer que o desafiador cenário globalizado maximiza as possibilidades por conta do
+                remanejamento dos quadros funcionais.</p>
+        </div>
+
+    </div>
+
+    <div>
+        <p style="text-align:center; font-size:200%">Você possui
+            <span class="badge badge-pill badge-danger">40</span> mensagens não lidas!</p>
+    </div>
+    <br>
+
+    <div class="container">
+
+        <div class="alert alert-primary" role="alert">
+            This is a primary alert—check it out!
+        </div>
+        <div class="alert alert-secondary" role="alert">
+            This is a secondary alert—check it out!
+        </div>
+        <div class="alert alert-success" role="alert">
+            This is a success alert—check it out!
+        </div>
+        <div class="alert alert-danger" role="alert">
+            This is a danger alert—check it out!
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">@</span>
+            </div>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+
+
+    </div>
+    <br>
+    <div style="text-align:center">
+        <button style="font-size:200%" type="button" class="btn btn-outline-info">E-mails
+            <span class="badge badge-pill badge-info">16</span>
+        </button>
+    </div>
+    <br>
+
+
+    <div style="text-align:center" class="container jumbotron-fluid">
+        <div class="alert alert-primary" id="area-01">
+            Manipulando a DOM com jquery-3
+            <br>Teste 01
+        </div>
+        <br>
+        <div class="alert alert-primary" id="area-02">
+            Manipulando a DOM com jquery-3
+            <br>Teste 02
+        </div>
+        <br>
+        <div class="alert alert-primary" id="area-03">
+            Manipulando a DOM com jquery-3
+            <br>Teste 03
+        </div>
+        <button type="button" class="btn btn-info" onclick="minhaFuncao1()">Executar Ação 01</button>
+        <button type="button" class="btn btn-dark" onclick="minhaFuncao2()">Executar Ação 02</button>
+        <button type="button" class="btn btn-warning" onclick="minhaFuncao3()">Executar Ação 03</button>
+    </div>
+    <br>
+    
+</body>
+<footer style="background-color:#c4eccd">
+
+    <div style="text-align:center">
+        <span class="badge badge-pill badge-primary">Primary</span>
+        <span class="badge badge-pill badge-secondary">Secondary</span>
+        <span class="badge badge-pill badge-success">Success</span>
+        <span class="badge badge-pill badge-danger">Danger</span>
+        <span class="badge badge-pill badge-warning">Warning</span>
+        <span class="badge badge-pill badge-info">Info</span>
+        <span class="badge badge-pill badge-dark">Dark</span>
+    </div>
+</footer>
+
+</html>

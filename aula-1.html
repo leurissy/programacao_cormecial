@@ -1,64 +1,130 @@
-<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Título da Página</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+    <head>
+        <meta charset="UTF-8">
+        <title>Titulo da Pagina</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <script type="text/javascript">
+            function soma(p1,p2){
+                alert(p1+p2);
+            }
+        </script>
+    </head>
+    <body>
+        
+        <div class="header">
+            <h2>Black Mirror</h2>
+          </div>
 
-		<!-- JAVA SCRIPT -->
-		<script type="text/javascript">
-			
-			function soma(p1,p2) {
-				alert(p1 + p2);
-			}
+        
+        <br>
+        <div class="row">
+            <div class="column side"></div>
+            <div class="column middle" style="background-color:#bbb;">
+                <!-- <img src="img/blackmirror.jpg" title="Black Mirror" height="250" width="500"> -->
+            </div>
+            <div class="column side"></div>
+          </div>
+        <a href="http://www.uft.edu.br/" target="self">Primeiro link</a>
 
-		</script>
-		<!-- FIM DO JAVA SCRIPT -->
-	</head>
-	<body>
-		<h2>Primeiro Cabeçalho</h2>
-		
-		<p>Primeiro Paragrafo</p>
-		<img src="img/doctor.jpg" title="Primeira Imagem" height="80" width="80">
-		<a href="http://universowho.com" target="self">Primeiro Link</a>
-		<h2>Lista Ordenada</h2>
-		<ol>
-			<li>Item 1</li>
-			<li>Item 2</li>
-			<li>Item 3</li>
-		</ol>
-		<h2>Lista Não Ordenada</h2>
-		<ul>
-			<li>Item 1</li>
-			<li>Item 2</li>
-			<li>Item 3</li>
-		</ul>
-		<table>
-			<caption>Descrição da Tabela</caption>
-			<thead>
-				<tr>
-					<th>Coluna 1</th>
-					<th>Coluna 2</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Linha 1 - Coluna 1</td>
-					<td>Linha 1 - Coluna 2</td>
-				</tr>
-				<tr>
-					<td>Linha 2 - Coluna 1</td>
-					<td>Linha 2 - Coluna 2</td>
-				</tr>
-				<tr>
-					<td>Linha 3 - Coluna 1</td>
-					<td>Linha 3 - Coluna 2</td>
-				</tr>
-				<tr>
-					<td>Linha 4 - Coluna 1</td>
-					<td>Linha 4 - Coluna 2</td>
-				</tr>
-			</tbody>
-		</table>
-	</body>
+        <h2>Lista Ordenada</h2>
+        <ol>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+        </ol>
+
+        <h2>Lista não ordenada</h2>
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+        </ul>
+
+        <table>
+            <caption>Descrição das tabelas</caption>
+            <thead>
+                <tr>
+                    <td>Coluna 01</td>
+                    <td>Coluna 02</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Linha 01</td>
+                    <td>Lihha 01</td>
+                </tr>
+                <tr>
+                    <td>Linha 02</td>
+                    <td>Lihha 02</td>
+                </tr>
+                <tr>
+                    <td>Linha 03</td>
+                    <td>Lihha 03</td>
+                </tr>
+                <tr>
+                    <td>Linha 04</td>
+                    <td>Lihha 04</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <form action="/cadastro/" method="post">
+            Login: <input type="text" name="login" placeholder="Digite seu Login">
+            Senha: <input type="password" name="senha">
+            <br>
+            <input type="radio" name="sexo" value="1" checked> Masculino
+            <input type="radio" name="sexo" value="2"> Feminino
+            <br>
+            <input type="checkbox" name="veiculo1" value="bike"> Eu tenho uma bike
+            <input type="checkbox" name="veiculo2" value="carro"> Eu tenho uma carro
+
+            <br>
+            Curso:
+            <select name="curso">
+                <option value="1">Ciência da Computação</option>
+                <option value="2">Direito</option>
+                <option value="3">Engenharia Elétrica</option>
+                <option value="4">Medicina</option>
+            </select>
+
+            <br>
+            Mensagem: <textarea name="message" rows="10" cols="30"></textarea>
+            <br>
+            Idade <input type="number" name="idade" min="0" max="100" step="1" value="30">
+            <br>
+            Data de Nascimento <input type="date" name="data_nascimento" min="2000-01-02">
+            <br>
+
+            Auto Complete: <input list="city">
+            <datalist id="city">
+                <option>Rio</option>
+                <option>Moscou</option>
+                <option>Tóquio</option>
+                <option>Berlim</option>
+                <option>Denver</option>
+                <option>Helsink</option>
+                
+            </datalist>
+
+            <br>
+
+            <input type="hidden" name="country" value="Brasil">
+            <br>
+            <input type="reset" style="color:crimson" value="Limpar">
+            <input type="submit" style="color:green" value="Enviar">
+            
+            <button  type="button" onclick="alert('Hello World')">Botão de Alerta</button>
+            <button  type="button" onclick="soma(4, 8)">Botão de Soma</button>
+            
+            <br>
+        </form>
+
+        <div id="area-mensagens">Elementos de Blocos</div>
+
+        <br>
+        Elements <span class="destaque"> de </span> linha
+
+    </body>
 </html>
