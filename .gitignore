@@ -1,5 +1,8 @@
+#Pastas
 virtual/*
 
+#Sistema
 !virtual/sistema
 
+#Arquivos
 *.pyc
